@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versatile Reader</title>
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Libraries for PDF, DOCX, and XLSX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <h1>Versatile Reader</h1>
+  <p>Drag and drop any file to preview its contents, edit text files, and download or export in different formats. Supported files include text, images, PDFs, Word, and Excel.</p>
+</header>
+
+<div class="container">
+  <label class="dropzone" id="dropzone">Drag & Drop Files Here
+      <input type="file" id="file-input" multiple accept="*/*">
+  </label>
+  <button class="file-input-label" onclick="document.getElementById('file-input').click();">Select Files</button>
+
+  <!-- Output Section -->
+  <div id="output">Files will appear here...</div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+  &copy; 2024 Versatile Reader. Created with care to make file handling simple and accessible.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
